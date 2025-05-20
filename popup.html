@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>QuizGenius</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <h1>QuizGenius</h1>
+    </div>
+    
+    <!-- Dashboard (shown immediately) -->
+    <div id="dashboard-container">
+      <div class="instructions">
+        <h3>How to use:</h3>
+        <ol>
+          <li>Browse to any page with questions</li>
+          <li>Click "Show Answer" to see the correct answer</li>
+          <li>Click "Why?" to see a detailed explanation</li>
+        </ol>
+      </div>
+      <!-- Button visibility toggle -->
+      <div class="button-visibility">
+        <h3>Button Visibility</h3>
+        <button id="toggle-buttons" class="primary-button">Hide Buttons</button>
+        <p class="toggle-status">Buttons are currently visible</p>
+      </div>
+      <!-- Screenshot feature -->
+      <div class="screenshot-tool">
+        <h3>Manually Ask a Question</h3>
+        <p>If a question isn't detected automatically, use this tool:</p>
+        <button id="screenshot-button" class="primary-button">Take Screenshot</button>
+        <div id="screenshot-area" class="hidden">
+          <textarea id="question-text" placeholder="Enter your question here or use the screenshot to capture it" rows="4"></textarea>
+          <div class="screenshot-preview-container hidden">
+            <img id="screenshot-preview" src="" alt="Screenshot preview">
+          </div>
+          <button id="submit-question" class="primary-button">Submit Question</button>
+          <button id="cancel-screenshot" class="secondary-button">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,259 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  width: 320px;
+  min-height: 400px;
+  background-color: #f8f8f8;
+}
+
+.container {
+  padding: 16px;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo h1 {
+  color: #6E59A5;
+  font-weight: 700;
+}
+
+/* Tabs styling */
+.tabs {
+  display: flex;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.tab-btn {
+  flex: 1;
+  background: none;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #666;
+  transition: all 0.3s ease;
+}
+
+.tab-btn.active {
+  color: #6E59A5;
+  border-bottom: 3px solid #6E59A5;
+  font-weight: bold;
+}
+
+/* Forms styling */
+.form {
+  display: none;
+}
+
+.form.active {
+  display: block;
+}
+
+input[type="email"],
+input[type="password"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.primary-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #6E59A5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  margin-bottom: 8px;
+}
+
+.primary-button:hover {
+  background-color: #5D4A94;
+}
+
+.secondary-button {
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  color: #6E59A5;
+  border: 1px solid #6E59A5;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 8px;
+  transition: all 0.3s;
+}
+
+.secondary-button:hover {
+  background-color: rgba(110, 89, 165, 0.1);
+}
+
+.error-message {
+  color: #e53935;
+  font-size: 14px;
+  margin-top: 10px;
+  min-height: 20px;
+}
+
+.success-message {
+  color: #43a047;
+  font-size: 14px;
+  margin-top: 10px;
+  min-height: 20px;
+}
+
+/* Plan selection */
+.plan-selection {
+  margin: 15px 0;
+}
+
+.plan-selection h3 {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.plan {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.plan input[type="radio"] {
+  margin-right: 10px;
+  margin-top: 3px;
+}
+
+.plan label {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.plan label strong {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.plan label span {
+  font-size: 12px;
+  color: #666;
+}
+
+.plan label .price {
+  font-weight: bold;
+  color: #6E59A5;
+  margin-top: 4px;
+}
+
+/* Dashboard styling */
+#dashboard-container {
+  display: block; /* Changed from 'none' to 'block' to make it visible */
+}
+
+.user-info {
+  background-color: #f1edf9;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.plan-info, .usage-info {
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.instructions, .screenshot-tool {
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #eee;
+}
+
+.instructions h3, .screenshot-tool h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.instructions ol {
+  padding-left: 20px;
+}
+
+.instructions li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.screenshot-tool p {
+  font-size: 14px;
+  margin-bottom: 12px;
+  color: #666;
+}
+
+.actions {
+  margin-top: 20px;
+}
+
+/* Container visibility */
+.active {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Screenshot preview */
+.screenshot-preview-container {
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  max-height: 150px;
+}
+
+.screenshot-preview-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Button visibility toggle */
+.button-visibility {
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #eee;
+}
+
+.button-visibility h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.toggle-status {
+  font-size: 14px;
+  color: #666;
+  margin-top: 8px;
+}
